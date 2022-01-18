@@ -9,6 +9,8 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:7001/eureka,http://localhost:7002/eureka
+  instance:
+    instance-id: payment8002 #actuator 7001/7002端口显示服务名称，默认是spring.application.name
 spring:
   application:
     name: cloud-payment-service
