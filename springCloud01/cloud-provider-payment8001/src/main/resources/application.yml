@@ -11,7 +11,7 @@ eureka:
       defaultZone: http://localhost:7001/eureka,http://localhost:7002/eureka
   instance:
     instance-id: payment8001 #actuator 7001/7002端口显示服务名称，默认是spring.application.name
-
+  prefer-ip-address: true #ip的完整地址
 spring:
   application:
     name: cloud-payment-service
